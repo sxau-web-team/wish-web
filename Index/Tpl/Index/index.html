@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/index.css">
+	<script type="text/javascript" src="__PUBLIC__/js/jquery-1.7.2.min.js"></script>
+	<jsconst/>
+	<script type="text/javascript" src="__PUBLIC__/js/index.js"></script>
+	<title>爱翻爱许愿墙</title>
+</head>
+<body>
+	<div id="top">
+		<div id="top_box">
+			<div class="logo">
+				<img src="__PUBLIC__/images/logo.png" alt="" />
+			</div>
+			<div class="send_wish">
+				<a href="javascript:void(0)" id="send"><img src="__PUBLIC__/images/index_06.png" alt="" /></a>
+				<span id="send_span">我要许愿</span>
+			</div>
+		</div>
+	</div>
+	<div id="wrap"></div>
+	<div id="main">
+	<list from="$wish" name="n">
+		<dl class='paper a<?php echo mt_rand(1,3) ?>'>
+			<dt>
+				<a href="javascript:void(0)" class='close_wish'>关闭</a>
+			</dt>
+			<dd class='content'>
+				<span class='num'>幸运号【{$n.wid}】</span>
+				<p class='content'>{$n.content}</p>
+				<span class='username'>许愿人：{$n.nickname}</span>
+				<p class='time'>{$n.time|date:'Y-m-d H:i',@@}</p>
+			</dd>
+			<dd class='bottom'>
+				
+			</dd>
+		</dl>
+</list>
+	</div>
+
+	<div id="send_form">
+		<p class="title"><a class="close" href="javascript:void(0)"></a></p>
+		<p class="nickname">昵称：</p>
+		<form action="" name="send_wish">
+			<input type="input" name="nickname" class="nick_input"/>
+			<p class="wish">愿望：（您还可以输入<b>50</b>个字）</p>
+			<textarea name="content"></textarea>
+			<div id='phiz'>
+				<img src="__PUBLIC__/images/phiz/baobao.gif" alt="baobao" />
+				<img src="__PUBLIC__/images/phiz/haixiu.gif" alt="haixiu" />
+				<img src="__PUBLIC__/images/phiz/hehe.gif" alt="hehe" />
+				<img src="__PUBLIC__/images/phiz/ku.gif" alt="ku" />
+				<img src="__PUBLIC__/images/phiz/qinqin.gif" alt="qinqin" />
+				<img src="__PUBLIC__/images/phiz/weiqu.gif" alt="weiqu" />
+				<img src="__PUBLIC__/images/phiz/zhuakuang.gif" alt="zhuakuang" />
+				<img src="__PUBLIC__/images/phiz/wabisi.gif" alt="wabisi" />
+				<img src="__PUBLIC__/images/phiz/xiu.gif" alt="xiu" />
+				<img src="__PUBLIC__/images/phiz/xin.gif" alt="xin" />
+			</div>
+			<span class="submit"></span>
+		</form>
+	</div>
+
+</body>
+</html>

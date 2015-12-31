@@ -1,0 +1,202 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+	font-family: '微软雅黑';
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+body{
+	background: url(../images/wallbg.jpg) repeat;
+	position: relative;
+}
+
+#top{
+	height: 80px;
+	background: url(../images/index_03.png) repeat-x;
+}
+#top_box{
+	width: 960px;
+	height: 80px;
+	margin: 0 auto;
+	position: relative;
+}
+#top_box .logo{
+	float: left;
+	height: 80px;
+	width: 278px;
+}
+#top_box .send_wish{
+	/*border: 1px solid #f00;*/
+	width: 110px;
+	height: 28px;
+	position: absolute;
+	left: 300px;
+	top:34px;
+}
+#top_box .send_wish a img{
+	float: left;
+}
+#top_box .send_wish span{
+	float: left;
+	margin-top: 3px;
+	margin-left: 8px;
+	font-size: 16px;
+	font-weight: 700;
+	color:#FF6600;
+	cursor: pointer;
+}
+#wrap{
+	height: 33px;
+	background: url(../images/bg.png) repeat-x;
+}
+#main{
+	margin: 0 auto;
+	position: relative;
+	/*border: 1px solid #f00;*/
+}
+#send_form{
+	width: 360px;
+	height: 400px;
+	background: #fff;
+	display: none;
+	position: absolute;
+	z-index: 999;
+	box-shadow: 0 0 8px;
+
+}
+#send_form .title{
+	margin: 0 auto;
+	width: 360px;
+	height: 56px;
+	background: url(../images/send-title.png) no-repeat;
+	/*border: 1px solid #ccc;*/
+	position: relative;
+}
+#send_form .title a.close{
+	display: block;
+	width: 29px;
+	height: 24px;
+	background: url(../images/close.png) no-repeat;
+	position: absolute;
+	right: 10px;
+	top: 15px;
+
+}
+#send_form .title a.close:hover{
+	background: url(../images/close.png) no-repeat -43px 0px;
+}
+#send_form .nickname{
+	height: 32px;
+	line-height: 32px;
+	color: #999;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+#send_form .wish{
+	margin-left: 10px;
+	color: #999;
+	margin-top: 30px;
+}
+#send_form textarea{
+	margin-left: 10px;
+	width: 310px;
+	height: 90px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-top: 10px;
+	resize:none;
+}
+#send_form input.nick_input{
+	width: 194px;
+	height: 37px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-left: 10px;
+}
+
+#phiz{
+	width: 330px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+#phiz img{
+	cursor: pointer;
+}
+#send_form span{
+	display: block;
+	width: 170px;
+	height: 63px;
+	background: url(../images/send.jpg) no-repeat;
+	margin-left: 90px;
+	margin-top: 15px;
+	float: left;
+	cursor: pointer;
+}
+.paper{
+	position: absolute;
+}
+.paper dt{
+	width: 220px;
+	height: 45px;
+	position: relative;	
+}
+.paper dt a.close_wish{
+	color: #333;
+	cursor: pointer;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.paper dt .username{
+	color: #333;
+}
+.paper dd.content{
+	height: 190px;
+	width: 200px;
+	padding: 0px 10px;
+	/*border: 1px solid #f00;*/
+}
+.paper dd.content .content{
+	height: 160px;
+	margin: 10px 0px;
+	word-break:break-all; /*支持IE，chrome，FF不支持*/
+　　word-wrap:break-word;/*支持IE，chrome，FF*/
+}
+.paper dd.bottom{
+	width: 220px;
+	height: 65px;
+}
+.a1 dt{
+	background: url(../images/a1.gif) no-repeat;
+}
+.a1 dd.content{
+	background: url(../images/a2.gif) repeat-y;
+}
+.a1 dd.bottom{
+	background: url(../images/a3.gif) no-repeat;
+}
+.a2 dt{
+	background: url(../images/b1.gif) no-repeat;
+}
+.a2 dd.content{
+	background: url(../images/b2.gif) repeat-y;
+}
+.a2 dd.bottom{
+	background: url(../images/b3.gif) no-repeat;
+}
+.a3 dt{
+	background: url(../images/c1.gif) no-repeat;
+}
+.a3 dd.content{
+	background: url(../images/c2.gif) repeat-y;
+}
+.a3 dd.bottom{
+	background: url(../images/c3.gif) no-repeat;
+}

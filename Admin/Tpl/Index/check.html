@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title></title>
+	<link rel="stylesheet" href="__PUBLIC__/css/public.css" />
+	<script type="text/javascript" src="__PUBLIC__/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/public.js"></script>	
+</head>
+<body>
+	<table class="table">
+		<tr>
+			<td class="th" colspan="10">查看愿望</td>
+		</tr>
+		<tr class="tableTop">
+			<td class="tdLittle1">ID</td>
+			<td>内容</td>
+			<td class="tdLtitle4">发布者</td>
+			<td class="tdLtitle4">发布时间</td>
+			<td class="tdLittle2">操作</td>
+		</tr>
+	  <list from="$wish" name="n">
+		   <tr>
+			<td>{$n.wid}</td>
+			<td>{$n.content}</td>
+			<td>{$n.nickname}</td>
+			<td>{$n.time|date:'Y-m-d H:i',@@}</td>
+			<td>
+				<a href="{|U('del', array('wid'=>$n['wid']))}" class="del">[删除]</a>
+			</td>
+		  </tr>
+	  </list>
+	</table>
+	<div class="page">
+		{$page}
+	</div>
+</body>
+</html>
